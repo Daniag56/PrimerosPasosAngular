@@ -1,15 +1,15 @@
 import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
 
 @Component({
+  standalone: true,
   templateUrl: 'counter-page.component.html',
   styles: `
-      button {  //Dentro del propio componente podemos determinar los estilos de los botones por ejemplo
+      button {
           padding: 5px;
           margin: 5px 10px;
           width: 75px;
       }
     `,
-  //changeDetection: ChangeDetectionStrategy.OnPush, Con esta funcion eliminamos el Zoneless de Angular
 })
 export class CounterPageComponent {
   counter = 10;
@@ -32,7 +32,7 @@ export class CounterPageComponent {
 
   botonReseteo() {
     this.counter = 0;
-    this.counterSignal.update((valorActual => 0));
+    this.counterSignal.update(() => 0);
   }
 }
 //Primer componente creado por mi como prueba
