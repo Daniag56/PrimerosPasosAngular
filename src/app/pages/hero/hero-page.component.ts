@@ -6,7 +6,7 @@ import { Component, computed, signal } from "@angular/core";
   selector: 'app-hero-page',
   standalone: true,
   templateUrl: './hero-page.component.html',
-  imports: [UpperCasePipe]
+  imports: [UpperCasePipe] //Debemos importar un pipe en nuestra clase si queremos invocarlo
 })
 export class HeroPageComponent {
 

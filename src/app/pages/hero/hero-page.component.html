@@ -12,7 +12,13 @@
 
   <td>Capitalizado:</td>
   <!---<dd>{{ capitalizedName() }}</dd> -->
-  <dd>{{ name() | uppercase }}</dd>
+  <dd>{{ name() | uppercase }}</dd> <!--Los pipes en angular son la manera de transformar data en algo visual
+                                        POR EJEMPLO:
+                                          DATO REAL:
+                                            1990-06-12T00:00:00.000Z
+                                          VISUAL:
+                                            12 de junio de 1990
+                                        -->
 </dl>
 
 <button (click)="changeHero()" class="btn btn-primary mx-2">
