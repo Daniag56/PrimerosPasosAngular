@@ -12,5 +12,6 @@ export const routes: Routes = [
     path: 'hero',
     component: HeroPageComponent
   },
-  { path: '**', redirectTo: 'hero' }
+  { path: '**', redirectTo: 'hero' } /*Aqui hacemos una redireccion, por si introducimos una ruta invalida,
+                                       podemos incluso redireccionar una funcion o componente*/
 ];
